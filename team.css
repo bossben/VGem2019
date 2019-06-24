@@ -1,0 +1,382 @@
+html {
+  height: 100%;
+  min-height:100%;
+  margin:0;
+  text-align: center;
+}
+body {
+  height: 100%;
+  min-height:100%;
+  margin:0;
+  text-align: center;
+  background-color: #00054a;
+  /*font-size: 0;*/
+}
+.out {
+  font-size: 1em;
+  height: 100%;
+  min-height:100%;
+  margin:0;
+  text-align: center;
+  background-color: #00054a;
+}
+
+/* Navbar container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left:0;
+  overflow: auto;
+  background-color: #00054a; /*blue*/
+  font-family: Arial;
+  width: 100%;
+  height: 80px;
+  z-index: 10;
+  font-size: 1em;
+}
+
+/* Links inside the navbar */
+/*.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  /*padding: 14px 16px;*/
+  /*display: block;
+  text-decoration: none;
+}*/
+.logo {
+  float: left;
+  overflow: hidden;
+  font-size: 16px;
+
+  color: red;
+  text-align: center;
+  text-decoration: none;
+  width: 33.33%;
+  height: 100%;
+}
+.logo img {
+  width: 70%; /* THIS CHANGES WITH THE LOGO */
+  height: 75%;
+  transform: translateY(15%);
+}
+/* The dropdown container */
+.dropdown-team, .dropdown-project,.dropdown-results, .dropdown-parts, .dropdown-human, .dropdown-awards {
+  float: left;
+  overflow: auto;
+  width: 11.11%;
+  font-family: 'Trebuchet MS';
+}
+
+/* Dropdown button */
+.dropdown-project .dropbtn, .dropdown-team .dropbtn, .dropdown-results .dropbtn, .dropdown-parts .dropbtn, .dropdown-human .dropbtn, .dropdown-awards .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  height: 80px;
+  width: 100%;
+}
+.dropbtn img {
+  width: 17%;
+  height: 50%;
+}
+.dropbtn span {
+  display: block;
+}
+
+/* Add a red background color to navbar links on hover */
+.dropdown-project:hover .dropbtn, .dropdown-team:hover .dropbtn, .dropdown-results:hover .dropbtn, .dropdown-parts:hover .dropbtn, .dropdown-human:hover .dropbtn, .dropdown-awards:hover .dropbtn {
+  background-color: #a6a6ff; /*light perrywinckle*/
+  color:#fff2bb; /*midnight purple*/
+}
+/* Show the dropdown menu on hover */
+.dropdown-project:hover .dropdown-content, .dropdown-team:hover .dropdown-content,.dropdown-results:hover .dropdown-content, .dropdown-parts:hover .dropdown-content, .dropdown-human:hover .dropdown-content, .dropdown-awards:hover .dropdown-content {
+  display: block;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #cdd9ff; /*lighter perrywinckle*/
+  min-width: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /*z-index: 1;*/
+  width: 11.11%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  font-family: 'Trebuchet MS';
+  float: none;
+  color: #42427c; /*blueberry*/
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #717ad3; /*deep perrywinckle*/
+  color: #eef0ff; /*ghost lilac*/
+}
+/* END OF NAVBAR STYLING*/
+
+/* STYLE PICTURE AT THE TOP */
+
+.top-picture {
+  /* The image used */
+  background-image: url("awkwardharold.jpg");
+  z-index: -11;
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* END OF STYLE PICTURE AT THE TOP */
+
+/* STYLE OF HORIZONTAL SCROLL INDICATOR PROGRESS BAR */
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 80px;
+
+  /* Dimensions */
+  width: 100%;
+  height: 10px;
+
+  /* Reset the appearance */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* Progress bar container for Firefox/IE10+ */
+  background-color: transparent;
+
+  /* Progress bar value for IE10+ */
+  color: red;
+  z-index: 6;
+}
+progress::-webkit-progress-bar {
+  background-color: transparent; /*transparent*/
+}
+progress::-webkit-progress-value {
+  background-color: #ff5d5f; /*coral*/
+}
+
+/* END OF STYLE OF HORIZONTAL SCROLL INDICATOR PROGRESS BAR */
+
+
+/* FILL SCREEEN STYLE */
+#content {
+  padding-left: 30%;
+  padding-right: 10%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color:white;
+}
+
+.fixed-index {
+  position:absolute;
+  /*top: 500px;*/
+
+  padding-left: 7%;
+  display: block;
+}
+/* END FILL SCREEEN STYLE */
+
+h2 {
+  /*padding-top: 90px;*/
+  overflow: auto;
+}
+.title {
+  position: absolute;
+  top: 200px;
+  left: 33%;
+  font-size: 50px;
+  font-weight: bold;
+  z-index: 5;
+
+}
+p {
+  text-align: left;
+}
+
+#unordered-index {
+  list-style: none;
+}
+#unordered-index {
+  border: 2px solid red;
+  border-radius: 20px;
+}
+.wetlab-link {
+  font-family: 'Trebuchet MS';
+  float: left;
+  color: grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 85px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.modelling-link {
+  font-family: 'Trebuchet MS';
+  float: left;
+  color: grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 68px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.outreach-link {
+  font-family: 'Trebuchet MS';
+  float: left;
+  color: grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 70px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.wiki-design-link {
+  font-family: 'Trebuchet MS';
+  float: left;
+  color: grey;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-right: 38px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.wetlab-link:hover, .modelling-link:hover, .outreach-link:hover, .wiki-design-link:hover {
+  color: black !important;
+}
+
+
+/* BOTTOM FACING ARROW TO BRING YOU TO THE FIRST SECTION */
+.bot-arrow {
+  position: absolute;
+  top: 600px;
+  left: 47.1%; /*THIS IS FOR THE ARROW TO BE CENTERED*/
+  z-index:5;
+}
+.bot-arrow a:hover .bottom {
+  border: 0.5em solid red;
+  /*position:absolute;*/
+
+}
+.bot-arrow a:hover .bottom:after {
+  border-top: 0.5em solid red;
+  border-right: 0.5em solid red;
+}
+
+.bot-arrow .bottom { /* circle arround arrow */
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  border: 0.5em solid white;
+  border-radius: 50%;
+  margin-left: 0.75em;
+}
+
+.bot-arrow .bottom:after { /* arrow*/
+  content: '';
+  display: inline-block;
+  margin-top: 0.6em;
+  width: 1.4em;
+  height: 1.4em;
+  border-top: 0.5em solid white;
+  border-right: 0.5em solid white;
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+/* PROGRESS RINGS */
+.progress-ring__circle {
+  /*stroke-dasharray: 10 20; /* 10px dashes separated by 20px; */
+  transition: stroke-dashoffset 0s;
+  /* axis compensation */
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+.svgplustext {
+  display: inline-flex;
+  align-self:center;
+}
+.svgplustext svg{
+  display: inline-flex;
+  stroke: blue; /* border of number?*/
+  transform: translateY(35%);
+  align-self: center;
+}
+.references-header {
+  float: left;
+  text-align:left;
+  padding-left: 20%;
+  background-color: white;
+}
+
+.references {
+  padding-bottom: 300px
+  /*height: 100%;*/
+  color:white;
+  background-color: white;
+}
+#references-list {
+  float:left;
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: 'Arial';
+  background-color: white;
+}
+#references-list li {
+  padding-top: 30px;
+}
+#footer {
+  position:absolute;
+  bottom:0;
+  background-color: #00054a;
+  width:100%;
+  height:300px;
+}
+#outer {
+  position: relative;
+  min-height: 90%; /*CHANGE BASED ON HOW LONG REFERENCES ARE*/
+  background-color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

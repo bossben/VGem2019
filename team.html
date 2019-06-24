@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--<link rel="stylesheet" type="text/css" href="Final.css">-->
+    <title>TRANSFOAM</title>
+    <link rel = "stylesheet" type = "text/css" href = "team.css" />
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type = "text/javascript" src="team.js"></script>
+
+  </head>
+  <body>
+    <div class = "out">
+    <div class="navbar">
+      <div class= "logo">
+        <a href = "home.html">
+          <img src="logo.png"></img>
+        </a>
+      </div>
+      <div class="dropdown-team">
+        <button class="dropbtn"><span><img src="team.png"></img></span><span>TEAM</span>
+              <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+              <a href="team.html">Team</a>
+              <a href="#">Attributions</a>
+              <a href="#">Collaborations</a>
+              <a href="#">Gallery</a>
+          </div>
+        </div> 
+        <div class="dropdown-project">
+          <button class="dropbtn"><span><img src="project.png"></img></span><span>PROJECT</span>
+              <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+              <a href="project-description.html">Description</a>
+              <a href="#">Design</a>
+              <a href="#">Experiments</a>
+              <a href="#">Model</a>
+              <a href="#">Hardware</a>
+              <a href="#">Software</a>
+              <a href="#">Inter lab</a>
+              <a href="#">Safety</a>
+              <a href="#">Graphic Design</a>
+          </div>
+        </div> 
+        <div class="dropdown-results">
+          <button class="dropbtn"><span><img src="results.png"></img></span><span>RESULTS</span>
+              <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+              <a href="#">Results</a>
+              <a href="#">Improve</a>
+              <a href="#">Demonstrate</a>
+          </div>
+        </div> 
+        <div class="dropdown-parts">
+          <button class="dropbtn"><span><img src="parts.png"></img></span><span>PARTS</span>
+              <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+              <a href="#">Parts</a>
+              <a href="#">Part Collection</a>
+          </div>
+        </div> 
+        <div class="dropdown-human">
+          <button class="dropbtn"><span><img src="outreach.png"></img></span><span>OUTREACH</span> 
+              <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+              <a href="#">Integrated Human Practices</a>
+              <a href="#">Public Engagement</a>
+          </div>
+        </div> 
+        <div class="dropdown-awards">
+          <button class="dropbtn"><span><img src="awards.png"></img></span><span>AWARDS</span>
+              <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+              <a href="#">Awards</a>
+              <a href="#">Medals</a>
+          </div>
+        </div> 
+    </div>
+    <progress value="0" id="progressBar">
+        <div class="progress-container">
+          <span class="progress-bar"></span>
+        </div>
+    </progress>
+    <div class = "top-picture">
+    </div>
+    <div class = "bot-arrow">
+      <a href="#wetlab-team">
+        <span class="bottom"></span>
+      </a>
+    </div>
+    <div class = "title">
+      <img src="SQUAD.png"></img>
+    </div>
+    <div class = "fixed-index">
+      <ul id = "unordered-index">
+        <li class = "lateral">
+          <div class = svgplustext>
+            <a class = "wetlab-link" href = "#wetlab-team">
+              <span><svg class="progress-ring" height="40" width="40">
+                <circle class="progress-ring__circle-wetlab" stroke="red" fill="transparent" stroke-width="1" fill="transparent" r="18" cx="20" cy="20"/><text x="50%" y="50%" text-anchor="middle" fill="grey" font-size="20px" font-family="Arial" dy=".3em">1</text>
+              </svg>
+              Wetlab</span>
+            </a>
+          </div>
+        </li>
+        <li class = "lateral"> 
+          <div class = svgplustext>
+            <a class = "modelling-link" href = "#modelling-team">
+              <span><svg class="progress-ring" height="40" width="40">
+                <circle class="progress-ring__circle-modelling" stroke="red" fill="transparent" stroke-width="1" fill="transparent" r="18" cx="20" cy="20"/><text x="50%" y="50%" text-anchor="middle" fill="grey" font-size="20px" font-family="Arial" dy=".3em">2</text>
+              </svg>
+              Modelling</span>
+            </a>
+          </div>
+        </li>
+        <li class = "lateral"> 
+          <div class = svgplustext>
+            <a class = "outreach-link" href = "#outreach-team">
+              <span><svg class="progress-ring" height="40" width="40">
+                <circle class="progress-ring__circle-outreach" stroke="red" fill="transparent" stroke-width="1" fill="transparent" r="18" cx="20" cy="20"/><text x="50%" y="50%" text-anchor="middle" fill="grey" font-size="20px" font-family="Arial" dy=".3em">3</text>
+              </svg>
+              Outreach</span>
+            </a>
+          </div>
+        </li>
+        <li class = "lateral"> 
+          <div class = svgplustext>
+            <a class = "wiki-design-link" href = "#wiki-design-team">
+              <span><svg class="progress-ring" height="40" width="40">
+                <circle class="progress-ring__circle-wiki-design" stroke="red" fill="transparent" stroke-width="1" fill="transparent" r="18" cx="20" cy="20"/><text x="50%" y="50%" text-anchor="middle" fill="grey" font-size="20px" font-family="Arial" dy=".3em">4</text>
+              </svg>
+              Wiki & Design</span>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <!--<img src="WeSmart.jpg">-->
+      
+
+    </div>
+    <div id = "content">
+
+      <h2 id = "wetlab-team"> Wet Lab Team Members</h2>
+      <p>THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS</p>
+      <h2 id = "modelling-team"> Modelling Team Members </h2>
+      <p> IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE</p>
+      <h2 id = "outreach-team"> Outreach Team Members </h2>
+      <p> IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE</p>
+      <h2 id = "wiki-design-team"> Wiki & Design Team Members </h2>
+      <p> IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE THIS IS THE TEAM PAGE</p>
+    </div>
+    <div id = "outer">
+      <div class = "references">
+        <h1 class = "references-header"> References </h1>
+        <ol id = "references-list">
+          <li>Shetty RP, Endy D, Knight TF. Engineering BioBrick vectors from BioBrick parts. J Biol Eng. 2008;2: 5.</li>
+          <li>Andreou AI, Nakayama N (2018) Mobius Assembly: A versatile Golden-Gate framework towards universal DNA assembly. PLOS ONE 13(1): e0189892.</li>
+          <li>Sarrion-Perdigones A, Falconi EE, Zandalinas SI, Juárez P, Fernández-del-Carmen A, et al. (2011) GoldenBraid: An Iterative Cloning System for Standardized Assembly of Reusable Genetic Modules. PLOS ONE 6(7): e21622.</li>
+          <li>Sarrion-Perdigones A, Vazquez-Vilar M, Palaci J, Castelijns B, Forment J, Ziarsolo P, et al. Golden- Braid 2.0: A Comprehensive DNA Assembly Framework for Plant Synthetic Biology. Plant Physiol. 2013; 162: 1618–1631</li>
+        </ol>
+      </div>
+      <div id = "footer"></div>
+    </div>
+  </div>
+  </body>
+</html>
