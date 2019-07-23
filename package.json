@@ -21,5 +21,8 @@
   "homepage": "https://github.com/bossben/VGem2019#readme",
   "dependencies": {
     "bootstrap": "^4.3.1"
+  },
+  "devDependencies": {
+    "igem-wikibrick": "^0.7.9"
   }
 }

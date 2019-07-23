@@ -132,8 +132,8 @@ body {
 
 .top-picture {
   /* The image used */
-  background-image: url("ProjectDescription.png");
-  z-index: -11;
+  background-image: url("Project Description.jpg");
+  z-index: -2;
   /* Full height */
   height: 100%; 
 
@@ -142,7 +142,20 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.title {
+  position: absolute;
+  top: 15%;
+  left: 4%;
+  font-size: 50px;
+  font-weight: bold;
+  z-index: 5;
 
+}
+.title img {
+
+  height: 80%;
+  width: 50%;
+}
 
 /* END OF STYLE PICTURE AT THE TOP */
 
@@ -184,24 +197,32 @@ progress::-webkit-progress-value {
 
 /* FILL SCREEEN STYLE */
 #content {
-
+  z-index:1;
   font-family: 'Nexa Regular';
+  display:block;
   font-weight:normal;
-  /*font-size:42px;*/
+  font-size:16px;
   padding-left: 8%;
-  padding-right: 30%;
+  padding-right: 40%;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color:white;
 }
 #picture {
   position:absolute;
-  top: 800px;
-  padding-left: 70%;
-  width: 20%;
-  height: 100%;
+  top: 110%;
+  padding-left: 65%;
+  height: 150%;
+  width: 45%;
   display: block;
-  background-color:white;
+  background-color:transparent;
+}
+#picture img {
+  position:absolute;
+  width: 30%;
+  height: 130%;
+  display: block;
+  background-color:transparent;
 }
 .fixed-index {
   position:absolute;
@@ -215,18 +236,11 @@ progress::-webkit-progress-value {
 h2 {
   /*padding-top: 90px;*/
   overflow: auto;
-}
-.title {
-  position: absolute;
-  top: 200px;
-  left: 33%;
-  font-size: 50px;
-  font-weight: bold;
-  z-index: 5;
-
+  font-family: 'Arial';
 }
 p {
   text-align: left;
+  line-height: 1.75; /* line spacing*/
 }
 
 #unordered-index {
@@ -244,9 +258,9 @@ p {
 /* BOTTOM FACING ARROW TO BRING YOU TO THE FIRST SECTION */
 .bot-arrow {
   position: absolute;
-  top: 600px;
+  top: 80%;
   left: 47.1%; /*THIS IS FOR THE ARROW TO BE CENTERED*/
-  z-index:5;
+  z-index:0;
 }
 .bot-arrow a:hover .bottom {
   border: 0.5em solid #ff2a32;
@@ -280,24 +294,6 @@ p {
   transform: rotate(135deg);
 }
 
-/* PROGRESS RINGS */
-.progress-ring__circle {
-  /*stroke-dasharray: 10 20; /* 10px dashes separated by 20px; */
-  transition: stroke-dashoffset 0s;
-  /* axis compensation */
-  transform: rotate(-90deg);
-  transform-origin: 50% 50%;
-}
-.svgplustext {
-  display: inline-flex;
-  align-self:center;
-}
-.svgplustext svg{
-  display: inline-flex;
-  stroke: blue; /* border of number?*/
-  transform: translateY(35%);
-  align-self: center;
-}
 .references-header {
   float: left;
   text-align:left;
@@ -306,9 +302,9 @@ p {
 }
 
 .references {
-  padding-bottom: 300px
+  padding-bottom: 300px;
   /*height: 100%;*/
-  color:white;
+  color:black;
   background-color: white;
 }
 #references-list {
@@ -331,7 +327,7 @@ p {
 }
 #outer {
   position: relative;
-  min-height: 90%; /*CHANGE BASED ON HOW LONG REFERENCES ARE*/
+  min-height: 115%; /*CHANGE BASED ON HOW LONG REFERENCES ARE*/
   background-color:white;
 }
 

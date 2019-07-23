@@ -7,6 +7,13 @@ font-weight: normal;
 src: local('Nexa Regular'), url('Fonts/NexaRegular.woff') format('woff');
 }
 
+@font-face {
+	font-family: 'Myriad Pro';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro'), url('Fonts/Myriad Pro Semibold SemiCondensed.otf') format('.otf');
+}
+
 
 @font-face {
 font-family: 'Nexa Regular Italic';
