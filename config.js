@@ -95,7 +95,7 @@
             js: path.join(buildtarget.js, '*.js'),
             bowerjs: buildtarget.bowerjs.concat('**/*.js'),
             bowercss: buildtarget.bowercss.concat('**/*.css'),
-            files: [path.join(build, `images/**/*.${imagetypes}`), path.join(build, `fonts/**/*.${fonttypes}`)]
+            files: [path.join(build, `**/*.${imagetypes}`), path.join(build, `Fonts/**/*.${fonttypes}`)]
         };
 
         var secure = 's'; // Change to 's' to enable secure html

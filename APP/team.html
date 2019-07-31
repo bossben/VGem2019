@@ -3,6 +3,13 @@
   <head>
     <!--<link rel="stylesheet" type="text/css" href="Final.css">-->
     <title>TRANSFOAM</title>
+    <script>
+      var element = document.querySelector('[rel="stylesheet"]');
+      var stylesheet = element.sheet || element.styleSheet;
+      console.log(stylesheet);
+      stylesheet.disabled = true;
+    </script>
+    <link rel = "stylesheet" type = "text/css" href = "iGEM.css" />
     <link rel = "stylesheet" type = "text/css" href = "team.css" />
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -14,7 +21,7 @@
     <div class = "out">
     <div class="navbar">
       <div class= "logo">
-        <a href = "home.html">
+        <a href = "index.html">
           <img src="Polished Logo.png"></img>
         </a>
       </div>
@@ -25,7 +32,6 @@
           <div class="dropdown-content">
               <a href="team.html">Team</a>
               <a href="#">Attributions</a>
-              <a href="#">Gallery</a>
           </div>
         </div> 
         <div class="dropdown-project">
@@ -38,7 +44,6 @@
               <a href="#">Experiments</a>
               <a href="#">Model</a>
               <a href="#">Software</a>
-              <a href="#">Inter lab</a>
               <a href="#">Safety</a>
               <a href="#">Graphic Design</a>
           </div>
@@ -144,7 +149,7 @@
       
 
     </div>
-    <div id = "content">
+    <div id = "contentbutnotcontentcuzigem">
 
       <h2 id = "wetlab-team"> Wet Lab Members</h2>
       
@@ -156,7 +161,7 @@
       Simonne is a 2nd year majoring in Biology and Computer Science. As a sustainably conscious individual, she is interested in using biotechnological approaches to solve the world’s environmental problems. Simonne loves to find ways to reduce her carbon footprint and is excited about the potential impacts of her team’s iGEM project in helping further a more sustainable planet. She believes that synthetic biology can be used in collaboration with  When Simonne is not in the lab with her E. coli “babies,” she enjoys hiking, reading, thrift-shopping, and cooking. Her favorite quote is: “People say nothing is impossible, but I do nothing every day.”<br> <br> <br> <br> <br> <br> <br>
 
       </p>
-      <p> <img id = "Jermaine-Austin" src = "Jermaine.jpg"></p>
+      <p> <img id = "Jermaine-Austin" src = "Jermaine.jpg" onmouseover="this.src='JermaineFunny.jpg'" onmouseout="this.src='Jermaine.jpg'"></p>
         <h3> Jermaine Austin </h3>
         <h4> Wetlab Member </h4>
         <p id = "Jermaine-Bio">
@@ -243,15 +248,7 @@
       </p>
     </div>
     <div id = "outer">
-      <div class = "references">
-        <h1 class = "references-header"> References </h1>
-        <ol id = "references-list">
-          <li>Shetty RP, Endy D, Knight TF. Engineering BioBrick vectors from BioBrick parts. J Biol Eng. 2008;2: 5.</li>
-          <li>Andreou AI, Nakayama N (2018) Mobius Assembly: A versatile Golden-Gate framework towards universal DNA assembly. PLOS ONE 13(1): e0189892.</li>
-          <li>Sarrion-Perdigones A, Falconi EE, Zandalinas SI, Juárez P, Fernández-del-Carmen A, et al. (2011) GoldenBraid: An Iterative Cloning System for Standardized Assembly of Reusable Genetic Modules. PLOS ONE 6(7): e21622.</li>
-          <li>Sarrion-Perdigones A, Vazquez-Vilar M, Palaci J, Castelijns B, Forment J, Ziarsolo P, et al. Golden- Braid 2.0: A Comprehensive DNA Assembly Framework for Plant Synthetic Biology. Plant Physiol. 2013; 162: 1618–1631</li>
-        </ol>
-      </div>
+      
       <div id = "footer"><img src="sponsors.png"></img></div>
     </div>
   </div>

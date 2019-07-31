@@ -196,7 +196,7 @@ progress::-webkit-progress-value {
 
 
 /* FILL SCREEEN STYLE */
-#content {
+#contentbutnotcontentcuzigem {
   z-index:1;
   font-family: 'Nexa Regular';
   display:block;
@@ -213,7 +213,7 @@ progress::-webkit-progress-value {
   top: 110%;
   padding-left: 65%;
   height: 150%;
-  width: 45%;
+  width: 35%;
   display: block;
   background-color:transparent;
 }

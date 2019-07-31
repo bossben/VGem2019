@@ -3,6 +3,13 @@
   <head>
     <!--<link rel="stylesheet" type="text/css" href="Final.css">-->
     <title>TRANSFOAM</title>
+    <script>
+      var element = document.querySelector('[rel="stylesheet"]');
+      var stylesheet = element.sheet || element.styleSheet;
+      console.log(stylesheet);
+      stylesheet.disabled = true;
+    </script>
+    <link rel = "stylesheet" type = "text/css" href = "iGEM.css" />
     <link rel = "stylesheet" type = "text/css" href = "project-description.css" />
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -16,8 +23,8 @@
     <div class = "out">
     <div class="navbar">
       <div class= "logo">
-        <a href = "home.html">
-          <img src="logo.png"></img>
+        <a href = "index.html">
+          <img src="Polished Logo.png"></img>
         </a>
       </div>
       <div class="dropdown-team">
@@ -27,8 +34,6 @@
           <div class="dropdown-content">
               <a href="team.html">Team</a>
               <a href="#">Attributions</a>
-              <a href="#">Collaborations</a>
-              <a href="#">Gallery</a>
           </div>
         </div> 
         <div class="dropdown-project">
@@ -40,9 +45,7 @@
               <a href="#">Design</a>
               <a href="#">Experiments</a>
               <a href="#">Model</a>
-              <a href="#">Hardware</a>
               <a href="#">Software</a>
-              <a href="#">Inter lab</a>
               <a href="#">Safety</a>
               <a href="#">Graphic Design</a>
           </div>
@@ -73,6 +76,7 @@
           <div class="dropdown-content">
               <a href="#">Integrated Human Practices</a>
               <a href="#">Public Engagement</a>
+              <a href="#">Collaborations</a>
           </div>
         </div> 
         <div class="dropdown-awards">
@@ -100,7 +104,7 @@
     <div class = "title">
       <img src="Description Text.png"></img>
     </div>
-    <div id = "content">
+    <div id = "contentbutnotcontentcuzigem">
 
       <h2 id = "plastic-waste"> Plastic waste is choking the environment</h2>
       <p>Petroleum based plastics wreak havoc on environments worldwide. Every year, over 25 million tons of plastics are disposed of into landfills.<sup>1</sup> At current production rates of 300 million tons per year, it is estimated only 53.3 years of economic oil extraction remain<sup>2,3</sup> Polystyrene, commonly known as Styrofoam, accounts for over 30 percent of this total plastic waste in volume.<sup>4</sup> This leaves a pressing need to find both a biodegradable alternative to plastics and a method to reduce polystyrene.</p>

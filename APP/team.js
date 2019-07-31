@@ -311,12 +311,12 @@ $(document).scroll(function() {
 
     var wikidesignelement = document.querySelector('#wiki-design-team');
 
-    var referenceselement = document.querySelector('.references-header');
+    var outerelement = document.querySelector('#outer');
     //detect when user scroll to top and set position to absolute else sets position to fixed
     $(".fixed-index").css({
-        "top": $(this).scrollTop() > 700 ? $(this).scrollTop() > getOffsetTop(referenceselement)-650 ? getOffsetTop(referenceselement)-450 : "200px" : "900px", //THESE MUST BE 600px APART
+        "top": $(this).scrollTop() > 700 ? $(this).scrollTop() > getOffsetTop(outerelement)-650 ? getOffsetTop(outerelement)-450 : "200px" : "900px", //THESE MUST BE 600px APART
         "left": "0",
-        "position": $(this).scrollTop() > 700 ? $(this).scrollTop() > getOffsetTop(referenceselement)-650 ? "absolute" : "fixed" : "absolute"
+        "position": $(this).scrollTop() > 700 ? $(this).scrollTop() > getOffsetTop(outerelement)-650 ? "absolute" : "fixed" : "absolute"
     });
     //console.log($(this).scrollTop()-getOffsetTop(element));
     //console.log(100*($(this).scrollTop()-getOffsetTop(wetlabelement)+90)/(getOffsetTop(modellingelement)-getOffsetTop(wetlabelement)));
@@ -330,7 +330,7 @@ $(document).scroll(function() {
 
     setProgressOutreach(100*($(this).scrollTop()-getOffsetTop(outreachelement)+90)/(getOffsetTop(wikidesignelement)-getOffsetTop(outreachelement)));
 
-    setProgressWikiDesign(100*($(this).scrollTop()-getOffsetTop(wikidesignelement)+90)/(getOffsetTop(referenceselement)-getOffsetTop(wikidesignelement)));
+    setProgressWikiDesign(100*($(this).scrollTop()-getOffsetTop(wikidesignelement)+90)/(getOffsetTop(outerelement)-getOffsetTop(wikidesignelement)));
     //setProgress(100*getOffsetTop($(this))/getMax()); //this doesn;t wrok
     //console.log("hi");
     //circle
@@ -345,7 +345,7 @@ $(window).on('resize', function(){
 
     var wikidesignelement = document.querySelector('#wiki-design-team');
 
-    var referenceselement = document.querySelector('.references-header');
+    var outerelement = document.querySelector('#outer');
     var wind = $(this)
     if(wind.width()<=1000) {
         $(".fixed-index").css({
@@ -358,9 +358,9 @@ $(window).on('resize', function(){
     else {
         $(".fixed-index").css({
             "display": "block",
-            "top": $(this).scrollTop() > 700 ? $(this).scrollTop() > getOffsetTop(referenceselement)-650 ? "2533px" : "200px" : "900px", //THESE MUST BE 600px APART
+            "top": $(this).scrollTop() > 700 ? $(this).scrollTop() > getOffsetTop(outerelement)-650 ? "2533px" : "200px" : "900px", //THESE MUST BE 600px APART
             "left": "0",
-            "position": $(this).scrollTop() > 700 ? $(this).scrollTop() > getOffsetTop(referenceselement)-650 ? "absolute" : "fixed" : "absolute",
+            "position": $(this).scrollTop() > 700 ? $(this).scrollTop() > getOffsetTop(outerlement)-650 ? "absolute" : "fixed" : "absolute",
 
             "padding-left": "7%"
         });

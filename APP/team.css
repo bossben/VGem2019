@@ -183,7 +183,7 @@ progress::-webkit-progress-value {
 
 
 /* FILL SCREEEN STYLE */
-#content {
+#contentbutnotcontentcuzigem {
   padding-left: 30%;
   padding-right: 10%;
   padding-top: 50px;
@@ -201,16 +201,16 @@ progress::-webkit-progress-value {
 }
 /* END FILL SCREEEN STYLE */
 
-#content h2 {
+#contentbutnotcontentcuzigem h2 {
   /*padding-top: 90px;*/
   overflow: auto;
   font-size: 3em;
   text-align: center;
 }
-#content h3 {
+#contentbutnotcontentcuzigem h3 {
   font-size: 2em;
 }
-#content h4 {
+#contentbutnotcontentcuzigem h4 {
   font-size: 1.5em;
 }
 .title {
@@ -231,7 +231,7 @@ p {
   list-style: none;
 }
 #unordered-index {
-  border: 2px solid red;
+  border: 10px solid red;
   border-radius: 20px;
 }
 .wetlab-link {
@@ -340,30 +340,7 @@ p {
   transform: translateY(35%);
   align-self: center;
 }
-.references-header {
-  float: left;
-  text-align:left;
-  padding-left: 20%;
-  background-color: white;
-}
 
-.references {
-  padding-bottom: 300px;
-  /*height: 100%;*/
-  color:white;
-  background-color: white;
-}
-#references-list {
-  float:left;
-  text-align: left;
-  padding-left: 10%;
-  padding-right: 10%;
-  font-family: 'Arial';
-  background-color: white;
-}
-#references-list li {
-  padding-top: 30px;
-}
 #footer {
   position:absolute;
   bottom:0;
