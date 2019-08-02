@@ -3520,3 +3520,33 @@ body {
     cursor: pointer
 } */
 /* cache key: 2018_igem_org:resourceloader:filter:minify-css:7:cc6161f4d7b5823ad34876850e573dd0 */
+
+
+#sideMenu,
+#top_title {
+    display: none !important;
+}
+
+#content {
+    width: 100vw !important;
+    padding: 0px !important;
+    border: none !important;
+    color: black !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: #fff !important;
+    position: relative !important;
+}
+
+#globalWrapper {
+    font-size: inherit !important;
+    padding-bottom: 0 !important;
+}
+
+#top_menu_under {
+    height: 0px !important;
+}
+
+ul {
+    list-style-image: none !important;
+}
