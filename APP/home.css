@@ -24,7 +24,7 @@ body {
 /* Navbar container */
 .navbar {
   position: fixed;
-  top: 0;
+  top: 18px;
   left:0;
   overflow: auto;
   background-color: #00054a; /*blue*/
@@ -131,9 +131,13 @@ body {
 /* STYLE PICTURE AT THE TOP */
 
 .top-picture {
-  z-index: -2;
+  position:absolute;
+  top:18px;
+  z-index: 0;
   /* Full height */
-  height: 100%; 
+  height: -webkit-calc(100% - 18px);
+  height:    -moz-calc(100% - 18px);
+  height:         calc(100% - 18px);
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -150,7 +154,7 @@ body {
 .title {
   position: absolute;
   top: 15%;
-  left: 4%;
+  left: 33%;
   font-size: 50px;
   font-weight: bold;
   z-index: 5;
@@ -247,6 +251,10 @@ progress::-webkit-progress-value {
 
 
 #fill {
+  position:absolute;
+  top: -webkit-calc(100% + 10px);
+  top:    -moz-calc(100% + 10px);
+  top:         calc(100% + 10px);
   z-index:1;
   font-family: 'Nexa Regular';
   display:block;
@@ -268,7 +276,13 @@ progress::-webkit-progress-value {
   padding-right: 6.55%;
   border-radius:50%;
 }
-
+#img1op {
+  position: absolute;
+  width: 20%;
+  padding-left: 6.55%;
+  padding-right: 6.55%;
+  border-radius:50%;
+}
 #description1, #description2, #description3 {
   width: 20%;
   padding-left: 6.55%;

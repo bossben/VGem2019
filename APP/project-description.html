@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--<link rel="stylesheet" type="text/css" href="Final.css">-->
     <title>TRANSFOAM</title>
     <script>
       var element = document.querySelector('[rel="stylesheet"]');
@@ -12,9 +11,7 @@
     <link rel = "stylesheet" type = "text/css" href = "iGEM.css" />
     <link rel = "stylesheet" type = "text/css" href = "project-description.css" />
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" type="text/css"
-          href="fonts.css"/>
+    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <script type = "text/javascript" src="project-description.js"></script>
 
@@ -42,12 +39,10 @@
           </button>
           <div class="dropdown-content">
               <a href="project-description.html">Description</a>
-              <a href="#">Design</a>
+              <a href="project-design.html">Design</a>
               <a href="#">Experiments</a>
-              <a href="#">Model</a>
-              <a href="#">Software</a>
-              <a href="#">Safety</a>
-              <a href="#">Graphic Design</a>
+              <a href="model.html">Model</a>
+              <a href="safety.html">Safety</a>
           </div>
         </div> 
         <div class="dropdown-results">
@@ -65,8 +60,7 @@
               <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-              <a href="#">Parts</a>
-              <a href="#">Part Collection</a>
+              <a href="#">Parts Collection</a>
           </div>
         </div> 
         <div class="dropdown-human">
@@ -74,7 +68,7 @@
               <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-              <a href="#">Integrated Human Practices</a>
+              <a href="integrated-hp.html">Integrated Human Practices</a>
               <a href="#">Public Engagement</a>
               <a href="#">Collaborations</a>
           </div>
@@ -94,43 +88,114 @@
           <span class="progress-bar"></span>
         </div>
     </progress>
-    <div class = "top-picture">
+    <div class = "top-picture"><img id = "background" src = "Homepage Website.png">
+    </div>
     </div>
     <div class = "bot-arrow">
-      <a href="#plastic-waste">
+      <a data-nosub = "true" href="#intro">
         <span class="bottom"></span>
       </a>
     </div>
-    <div class = "title">
-      <img src="Description Text.png"></img>
+    <div class = "fixed-index">
+      <ul id = "unordered-index">
+        <li class = "lateral">
+          <div class = svgplustext>
+            <a class = "intro-link" href = "#intro">
+              <span><svg class="progress-ring" height="40" width="40">
+                <circle class="progress-ring__circle-intro" stroke="red" fill="transparent" stroke-width="1" fill="transparent" r="18" cx="20" cy="20"/><text x="50%" y="50%" text-anchor="middle" fill="grey" font-size="20px" font-family="Arial" dy=".3em">1</text>
+              </svg>
+              Plastic waste</span>
+            </a>
+          </div>
+        </li>
+        <li class = "lateral">
+          <div class = svgplustexttwolines>
+            <a class = "environ-link" href = "#environ">
+              <span><svg class="progress-ring" height="40" width="40">
+                <circle class="progress-ring__circle-environ" stroke="red" fill="transparent" stroke-width="1" fill="transparent" r="18" cx="20" cy="20"/><text x="50%" y="50%" text-anchor="middle" fill="grey" font-size="20px" font-family="Arial" dy=".3em">2</text>
+              </svg>
+              Consequences<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Of Polystyrene</span>
+            </a>
+          </div>
+        </li>
+        <li class = "lateral"> 
+          <div class = svgplustexttwolines>
+            <a class = "phb-link" href = "#phb">
+              <span><svg class="progress-ring" height="40" width="40">
+                <circle class="progress-ring__circle-phb" stroke="red" fill="transparent" stroke-width="1" fill="transparent" r="18" cx="20" cy="20"/><text x="50%" y="50%" text-anchor="middle" fill="grey" font-size="20px" font-family="Arial" dy=".3em">3</text>
+              </svg>
+              PHBs: The Future  <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; of Plastics </span>
+            </a>
+          </div>
+        </li>
+        <li class = "lateral"> 
+          <div class = svgplustext>
+            <a class = "solution-link" href = "#solution">
+              <span><svg class="progress-ring" height="40" width="40">
+                <circle class="progress-ring__circle-solution" stroke="red" fill="transparent" stroke-width="1" fill="transparent" r="18" cx="20" cy="20"/><text x="50%" y="50%" text-anchor="middle" fill="grey" font-size="20px" font-family="Arial" dy=".3em">4</text>
+              </svg>
+              Our Solution</span>
+            </a>
+          </div>
+        </li>
+        <li class = "lateral"> 
+          <div class = svgplustext>
+            <a class = "transfoam-link" href = "#transfoam">
+              <span><svg class="progress-ring" height="40" width="40">
+                <circle class="progress-ring__circle-transfoam" stroke="red" fill="transparent" stroke-width="1" fill="transparent" r="18" cx="20" cy="20"/><text x="50%" y="50%" text-anchor="middle" fill="grey" font-size="20px" font-family="Arial" dy=".3em">5</text>
+              </svg>
+              Transfoam in Society</span>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <!--<img src="WeSmart.jpg">-->
+      
+
     </div>
     <div id = "contentbutnotcontentcuzigem">
 
-      <h2 id = "plastic-waste"> Plastic waste is choking the environment</h2>
-      <p>Petroleum based plastics wreak havoc on environments worldwide. Every year, over 25 million tons of plastics are disposed of into landfills.<sup>1</sup> At current production rates of 300 million tons per year, it is estimated only 53.3 years of economic oil extraction remain<sup>2,3</sup> Polystyrene, commonly known as Styrofoam, accounts for over 30 percent of this total plastic waste in volume.<sup>4</sup> This leaves a pressing need to find both a biodegradable alternative to plastics and a method to reduce polystyrene.</p>
-      <h2 id = "polystyrene-degrading"> Polystyrene cannot be efficiently degraded </h2>
-      <p> Recycling plastics is usually not profitable and this inhibits the recycling capacity of many centers. Styrofoam is particularly unprofitable as recyclables are calculated on a "per pound" basis and the composition expanded polystyrene is roughly 95% air. Additionally, many local recycling plants are incapable of properly recycling polystyrene, as the process of compression requires expensive machinery and copious energy. Instead, the job is outsourced to a large industrial plant, which increases transportation costs. Because of this, companies offload polystyrene to landfills where it accumulates in large volumes.<sup>6</sup> In the United States alone, about 3 million pounds of polystyrene are put into landfills each day. At a disposal cost of $1.5/lb, companies in the United States invest a total of ~4 million dollars a day for polystyrene disposal.<sup>5</sup></p>
-      <h2 id = "PHAs-future"> PHAs are the future of plastics </h2>
-      <p> In recent years, the effect of single use plastics on the environment has become a pressing issue at the forefront of global attention. However, while it is promising to see the world slowly move to a greener future, current movements such as banning straws or plastic bags do not eliminate the need for single use plastic.<sup>7</sup> Enter PHAs!  Polyhydroxyalkanoates (PHAs) are a group of bacterial polyesters that function as biodegradable plastics. PHAs are produced by a variety of prokaryotic microorganisms under unbalanced nutrition conditions. The main obstacle to PHAs becoming a viable alternative to normal plastic is the high cost of the carbon substrate, typically glucose, which accounts for up to 50% of the total production cost. The production of PHAs with waste carbon sources has been identified as a viable means to significantly reduce the cost. Our project aims to demonstrate that waste polystyrene can effectively be used as a carbon source for PHA production.</p>
-      <h2 id = "solution"> Solution: Remediate polystyrene while producing PHAs at the same time</h2>
-      <p> By introducing genes for the sty and pha pathways to E. coli, styrene (the monomer of polystyrene) can be metabolized by the bacteria to produce P3HB. The sty plasmid includes genes styABCDE, which were taken from Pseudomonas putida. This will take styrene as an input and convert it to phenyl acetic acid. Next, phenyl acetic acid will be converted to acetyl-coA through the native paa pathway, which is expressed in our chassis organism E.coli TG1. Lastly the acetyl-coA is used to produce our desired output, P3HB. This process is facilitated by the pha plasmid containing genes phaABC from Cuprividas Necator. Coupling the need for a cost-effective method to process polystyrene waste and sustainably produce PHAs creates a niche market in which two problems can be solved with a single solution.</p>
-      <h2 id = "society"> Transfoam in Society</h2>
-      <p>When creating a biological device, it is of utmost importance to understand its social impact on the world. Our project has the potential to disrupt the styrene life-cycle so we wanted to understand how polystyrene is currently managed and how our project would impact its management on the local and industrial scale. We visited our local recycling plants and engaged in dialogue with local sustainability groups to discuss how our project will interact with the already established efforts to reduce plastic waste.</p>
+      <h2 id = "intro"> Plastic Waste</h2>
+      
+      <img id = "behind" src = "SQUAD.png">
+      <p>In the last century, plastic has transformed from an unknown polymer to an essential component of the modern world. Global plastic production has dramatically risen from 50 metric tons in 1976 to 348 metric tons in 2017.<sup>1</sup> The unprecedented accumulation of plastic developed a short-sighted waste management system with deadly consequences. 80% of plastic waste is directed to landfills which wreak havoc on the environment.<sup>2</sup> In landfills, toxins in plastics accumulate into a harmful leachate which is dispersed into our atmosphere and water systems.<sup>3</sup> 12% of plastic waste is incinerated which release pollutants like particulate matter and sulfur that threaten environmental and human health.<sup>4</sup> Around 10% of all plastic waste finds its way into our oceans where they break down into microplastics. When ingested by marine wildlife, microplastics dismantle marine ecosystems.<sup>5</sup> <br> <br>
+      Society clearly cannot continue its uncontrollable plastic waste generation; however, it is too reliant on plastic use. An alternative plastic which can carry out the functions of conventional products but does not introduce harm is needed. 
+
+      </p>
+     
+        
+      
+      <h2 id = "environ"> Consequences of Polystyrene</h2>
+      <p>Polystyrene, specifically expanded polystyrene (EPS), constitutes a large percentage of non-recycled plastic. Only about 12% of polystyrene is recycled, while the other 88% reaches landfills and waterways.<sup>6</sup></p>
+      <p> <img id = "img1" src = "STONKS.png" ></p>
+      <h4> Accumulation in Landfills </h4>
+      <p>EPS is made up of 95% air by volume, taking up a substantial amount of space in landfills and making it both physically and economically difficult to transport and recycle.<sup>7</sup> Thus, it is less expensive for companies to produce new polystyrene products than to recycle old ones. This illustrates the lack of a “closed-loop” system for polystyrene recycling. </p>
+      <br>
+      <p> <img id = "img1" src = "STONKS.png" ></p>
+      <h4> Pollution Resulting from Incineration </h4>
+      <p>As a result of its space-taking quality and inability to be efficiently recycled, polystyrene waste is often left to be incinerated. This thermal degradation of polystyrene in open environments introduces toxic pollutants, such as polycyclic aromatic hydrocarbons, into the atmosphere. Such compounds are known to have potential carcinogenic properties. Incineration also leads to carbon dioxide emissions, contributing to climate change and public health risks.<sup>4</sup></p>
+      <br>
+      <p> <img id = "img1" src = "STONKS.png" ></p>
+      <h4> Contributor to Microplastics </h4>
+      <p>Polystyrene waste that is not contained in landfills and that is exposed to sunlight degrades into tiny fragments known as microplastics. In fact, approximately 80% of microplastics in the ocean originates from land-based sources. These plastic remains then pollute waterways and collect contaminants, harming marine life and destroying ecosystems. The Society of Environmental Toxicology and Chemistry highlights that the 4.793 - 12.45 million metric tons discrepancy between the volume of microplastics released into waterways and the volume that floats at sea-level is largely attributed to ingestion by marine life. This, in turn, introduces toxins to the marine food web, giving rise to human health issues.<sup>8</sup></p>
+        
+      <h2 id = "phb">PHBs are the Future of Plastics </h2>
+      <p> There have been many attempts to find a plausible solution to plastic waste. A forerunner in this is poly-hydroxybutyrate (PHB), a specific derivative of the group poly-hydroxyalkylates (PHAs). This biodegradable plastic has various uses from plasticware to surgical stitches. As reflected in its name, biodegradable plastics degrade back into nature, preventing accumulation in landfills and subsequent polluting risks.<sup>9</sup> All of these benefits have encouraged scientists to efficiently develop biodegradable polymers with properties comparable petrochemical plastics. One such strategy involves feeding waste-carbon sources, such as sunflower oil, to bacteria to produce biodegradable material.<sup>10</sup> To optimize quality, efficiency, and sustainability of biodegradable plastic production, our team had the idea to utilize <i>E. coli</i> and a common waste source, polystyrene, to generate PHBs.</p>
+        <p> <img id = "fullimg" src = "STONKS.png" ></p>
+      <h2 id = "solution">Our Solution</h2>
+      <p>Our solution tackles both ends of the plastic problem: it chemically remediates polystyrene in order to produce PHBs, a sustainable alternative to current petroleum-based plastics. Polystyrene is a usable waste product that is not being used to its potential. Rather than leaving it to negatively impact the environment, polystyrene can be utilized as a tool for a more sustainable plastics market. The specific waste product we chose for our device was styrene, the monomer of polystyrene. Polystyrene can be converted  to its monomer through pyrolysis. More information about this process can be found on our <a href= "integrated-hp.html"> Human Practices page</a>.   </p>
+      <p><img id = "bullet" src = "STONKS.png" ></p>
+      <p>
+      The biological device contains two plasmids necessary to metabolize styrene and produce PHBs. The first plasmid contains the styABCDE gene cluster, which is capable of catabolizing the transformation of styrene to phenylacetic acid. Our chassis organism, E. coli K12 TG1, contains the paa gene cluster capable of catalyzing the conversion of phenylacetic acid to acetyl-CoA.11 This cluster is crucial to marrying the two plasmid reactions together to create one cohesive device. The second plasmid catalyzes the conversion of acetyl-CoA to poly-hydroxybutyrate. This completes the overall pathway outlined in our designed chassis. 
+      <p> <img id = "fullimg" src = "STONKS.png" ></p>
+      <h2 id = "transfoam"> Transfoam in Society </h2>
+      <p>Transfoam is not just a device. It’s a movement dedicated to resolving the plastic waste crisis. Such a multifaceted problem demands a multifaceted solution. While synthetic biology is an essential component for developing sustainable plastic technology, social engineering is also necessary to reform the infrastructures that drive unsustainable plastic consumption practices. Our human practices aimed to redesign plastic management streams through political and educational initiatives. </p>
+      <p> <img id = "fullimg" src = "STONKS.png" ></p>
+
+
     </div>
-    <div id = "picture"><img src = "sidebar-picture.png"></img></div>
     <div id = "outer">
-      <div class = "references">
-        <h1 class = "references-header"> References </h1>
-        <ol id = "references-list">
-          <li>“National Overview: Facts and Figures on Materials, Wastes and Recycling.” EPA, Environmental Protection Agency, 26 Oct. 2018, www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/national-overview-facts-and-figures-materials. </li>
-          <li>Reporter, Staff. “World Energy Day 2014: How Much Oil Is Left and How Long Will It Last?” International Business Times UK, 22 Oct. 2014, www.ibtimes.co.uk/world-energy-day-2014-how-much-oil-left-how-long-will-it-last-1471200.</li>
-          <li>Geyer, R., Jambeck, J. R., & Law, K. L. (2017). Production, use, and fate of all plastics ever made. Science Advances, 3(7), e1700782. Available at: http://advances.sciencemag.org/content/3/7/e1700782.</li>
-          <li>Leo, Cheryl. “Styrofoam: The Silent Killer.” EcoWalktheTalk, 21 May 2011, www.ecowalkthetalk.com/blog/2011/05/21/styrofoam-the-silent-killer/.</li>
-          <li>Chandra, M., Kohn, C., Pawlitz, J. and Powell, G., 2016. REAL COST OF STYROFOAM.</li>
-          <li>John Kelly "How does polystyrene recycling work?" 29 August 2012.HowStuffWorks.com.<https://science.howstuffworks.com/environmental/green-science/polystyrene-recycling.html> 20 June 2019</li>
-          <li>Trump, Phil Van. “Why 2019 May Be a Promising Year for PHA.” Plastics Today, 14 Jan.2019,www.plasticstoday.com/packaging/why-2019-may-be-promising-year-pha/45669703260085.</li>
-        </ol>
-      </div>
+      
       <div id = "footer"><img src="sponsors.png"></img></div>
     </div>
   </div>
